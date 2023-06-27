@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="style/output.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class='w-full h-screen bg-slate-800 flex items-center justify-center'>
+        <form id="forma" class='bg-white p-4 w-[350px] shadow-lg shadow-blue-800 rounded text-sky-500'>
+            <h1 class='text-2xl text-center'>Convertor</h1>
+            <div>
+                <!-- Amount Input -->
+                <label class='mt-6'>
+                    <p>Amount</p>
+                    <input id="amount" value="100" name='amount' type="number" placeholder='Amount' />
+                </label>
+                <!-- From -->
+                <label class='mt-6'>
+                    <p>From</p>
+                    <select id="from" name='from' class='w-full'>
+                        <option value=""></option>
+                    </select>
+                </label>
+                <!-- TO -->
+                <label class='mt-6'>
+                    <p>To</p>
+                    <select id="to" name='to' class='w-full'>
+                        <option value="">salom</option>
+                    </select>
+                </label>
+                <div>
+                    <!-- Result -->
+                    <h1 id="res" class='text-center text-xl text-sky-500 mt-3'>
+
+                    </h1>
+                </div>
+                <!-- Click Btn -->
+                <button
+                    class='bg-sky-500 w-full text-white rounded p-2 mt-3 hover:bg-sky-600 hover:shadow-lg hover:shadow-sky-600/40'>Convert</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Main JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
